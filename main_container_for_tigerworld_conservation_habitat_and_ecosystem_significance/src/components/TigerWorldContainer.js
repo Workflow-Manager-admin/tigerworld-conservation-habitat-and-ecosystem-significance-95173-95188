@@ -610,36 +610,165 @@ function TigerWorldContainer() {
         <div className="tiger-stripe-divider"></div>
         <div className="tiger-content">
           <div className="tiger-text-content">
+            <h3>Global Population Trends and Statistics</h3>
+            <p>
+              The dramatic decline in tiger populations over the past century represents one of the most severe population crashes of any large predator in recorded history. In 1900, an estimated 100,000 tigers roamed across Asia. By 2010, that number had plummeted to just 3,200—a 97% decline.
+            </p>
+            <p>
+              Recent conservation efforts have helped tiger numbers increase to approximately 4,500 as of the latest global assessment. However, this recovery is uneven: while countries like India, Nepal, and Russia have seen increases, tigers continue to decline in parts of Southeast Asia.
+            </p>
+            
+            <div className="tiger-stats-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Country</th>
+                    <th>Estimated Tiger Population</th>
+                    <th>Trend</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>India</td>
+                    <td>~3,000</td>
+                    <td>Increasing</td>
+                  </tr>
+                  <tr>
+                    <td>Russia</td>
+                    <td>~550</td>
+                    <td>Stable/Increasing</td>
+                  </tr>
+                  <tr>
+                    <td>Indonesia</td>
+                    <td>~400</td>
+                    <td>Decreasing</td>
+                  </tr>
+                  <tr>
+                    <td>Nepal</td>
+                    <td>~235</td>
+                    <td>Increasing</td>
+                  </tr>
+                  <tr>
+                    <td>Bangladesh</td>
+                    <td>~114</td>
+                    <td>Stable</td>
+                  </tr>
+                  <tr>
+                    <td>Bhutan</td>
+                    <td>~90</td>
+                    <td>Stable</td>
+                  </tr>
+                  <tr>
+                    <td>Thailand</td>
+                    <td>~160</td>
+                    <td>Stable</td>
+                  </tr>
+                  <tr>
+                    <td>Malaysia</td>
+                    <td>~150</td>
+                    <td>Decreasing</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <h3>Major Threats</h3>
             <div className="tiger-threats-container">
               <div className="tiger-threat-item">
                 <h4>Habitat Loss and Fragmentation</h4>
                 <p>
                   Deforestation, agricultural expansion, and infrastructure development have destroyed and 
-                  fragmented tiger habitats, isolating populations and reducing prey availability.
+                  fragmented tiger habitats, isolating populations and reducing prey availability. An estimated 95% of tiger habitat has been lost in the past 150 years.
+                </p>
+                <p>
+                  Linear infrastructure like roads, railways, and canals cut through tiger habitats, creating barriers to movement and increasing human access to previously remote areas. At least 35% of current tiger habitat is at risk from infrastructure development.
                 </p>
               </div>
               <div className="tiger-threat-item">
                 <h4>Poaching and Illegal Trade</h4>
                 <p>
                   Tigers are hunted for their body parts, which are used in traditional medicines, decorative 
-                  items, and luxury goods, driving a lucrative illegal wildlife trade.
+                  items, and luxury goods, driving a lucrative illegal wildlife trade. A single tiger can fetch tens of thousands of dollars on the black market.
+                </p>
+                <p>
+                  Between 2000 and 2018, parts from at least 2,359 individual tigers were seized in illegal wildlife trade, representing only a fraction of the actual trade. Despite international bans, demand for tiger parts persists in several countries.
                 </p>
               </div>
               <div className="tiger-threat-item">
                 <h4>Human-Wildlife Conflict</h4>
                 <p>
                   As human settlements expand into tiger territories, conflicts arise, often resulting in 
-                  retaliatory killings when tigers prey on livestock or threaten human safety.
+                  retaliatory killings when tigers prey on livestock or threaten human safety. In some areas, tigers kill dozens of people annually.
+                </p>
+                <p>
+                  Tigers that lose access to natural prey due to habitat degradation and poaching may target livestock, creating conflicts with local communities who depend on these animals for their livelihoods. In response, villagers may poison or trap tigers.
                 </p>
               </div>
               <div className="tiger-threat-item">
                 <h4>Climate Change</h4>
                 <p>
                   Changing weather patterns affect tiger habitats, particularly in coastal areas like the 
-                  Sundarbans, where rising sea levels threaten to submerge crucial tiger habitat.
+                  Sundarbans, where rising sea levels threaten to submerge crucial tiger habitat. Models predict the Sundarbans could lose up to 96% of habitat suitable for tigers by 2070.
+                </p>
+                <p>
+                  Climate change also alters prey distribution, water availability, and vegetation patterns, potentially forcing tigers to shift their ranges or adapt to new conditions. Extreme weather events like floods and droughts can directly impact tiger populations.
+                </p>
+              </div>
+              <div className="tiger-threat-item">
+                <h4>Prey Depletion</h4>
+                <p>
+                  Hunting of tiger prey species for human consumption reduces food availability for tigers. A tiger needs to consume approximately 50 large ungulates annually to survive and reproduce.
+                </p>
+                <p>
+                  In many areas, prey populations have been severely depleted, forcing tigers to expand their territories, come into conflict with humans, or simply starve. Even well-protected tiger habitats cannot support tigers if prey is absent.
+                </p>
+              </div>
+              <div className="tiger-threat-item">
+                <h4>Disease</h4>
+                <p>
+                  Emerging infectious diseases pose an increasing threat to small, isolated tiger populations with limited genetic diversity. The canine distemper virus (CDV) has killed tigers in the wild and could devastate vulnerable populations.
+                </p>
+                <p>
+                  Disease transmission from domestic animals to wild tigers is a growing concern as human settlements encroach on tiger habitat. Outbreaks in small populations could potentially wipe out entire subspecies.
                 </p>
               </div>
             </div>
+            
+            <div className="tiger-image-grid">
+              <div className="tiger-image">
+                <img src="https://images.unsplash.com/photo-1614531341773-3bff8b7cb3fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Deforestation threatening tiger habitat" />
+                <div className="tiger-image-caption">Deforestation destroying critical tiger habitat</div>
+              </div>
+              <div className="tiger-image">
+                <img src="https://images.unsplash.com/photo-1615874694520-474822394e73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tiger skin from illegal poaching" />
+                <div className="tiger-image-caption">Confiscated tiger products from illegal wildlife trade</div>
+              </div>
+            </div>
+            
+            <h3>Local Community Involvement</h3>
+            <p>
+              Conservation efforts have increasingly recognized that local communities must be partners in tiger conservation rather than adversaries. When local people benefit from tiger conservation, they are more likely to support it.
+            </p>
+            <p>
+              Successful community engagement strategies include:
+            </p>
+            <ul className="tiger-list">
+              <li>
+                <strong>Alternative Livelihoods:</strong> Developing sustainable income sources that don't deplete forest resources, such as ecotourism, handicraft production, and sustainable agriculture.
+              </li>
+              <li>
+                <strong>Compensation Programs:</strong> Providing financial compensation for livestock losses due to tiger predation.
+              </li>
+              <li>
+                <strong>Community-Based Monitoring:</strong> Employing local people as forest guards and wildlife monitors, creating a sense of ownership and providing employment.
+              </li>
+              <li>
+                <strong>Benefit Sharing:</strong> Ensuring that a portion of revenue from tiger tourism and other conservation-related activities flows back to local communities.
+              </li>
+              <li>
+                <strong>Education and Awareness:</strong> Building understanding and pride in local wildlife, particularly among young people who represent the future of conservation.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
