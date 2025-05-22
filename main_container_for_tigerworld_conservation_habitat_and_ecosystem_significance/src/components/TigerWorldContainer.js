@@ -41,10 +41,22 @@ function TigerWorldContainer() {
               ecosystems they inhabit. However, their populations have faced dramatic declines due to habitat 
               loss, poaching, and human-wildlife conflict.
             </p>
+            <p>
+              The tiger is the largest extant cat species and a member of the genus Panthera. Its most recognizable feature is a pattern of dark vertical stripes on orange-brown fur with a lighter underside. It is an apex predator, primarily preying on ungulates such as deer and wild boar. It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat to support its requirements for prey and rearing of its offspring.
+            </p>
+            <p>
+              Cubs stay with their mother for about two years, then become independent and leave their mother's home range to establish their own. The tiger once ranged widely from Eastern Anatolia and the Caucasus to Central, East and South Asia, but has been extirpated in some parts of this range and now inhabits just 7% of its historical territory.
+            </p>
           </div>
-          <div className="tiger-image-placeholder">
-            <div className="placeholder-text">Tiger Image</div>
+          <div className="tiger-image">
+            <img src="https://images.unsplash.com/photo-1615963244664-5b845b2025ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bengal Tiger in forest habitat" />
+            <div className="tiger-image-caption">Bengal Tiger in its natural forest habitat</div>
           </div>
+        </div>
+        
+        <div className="tiger-fact-card">
+          <h4>Did You Know?</h4>
+          <p>A tiger's roar can be heard as far as 3 kilometers away. Their distinctive striped coat helps them blend into tall grass, making them nearly invisible to prey. Additionally, each tiger's stripe pattern is unique, like human fingerprints!</p>
         </div>
       </section>
 
