@@ -1,5 +1,6 @@
 import React from 'react';
 import './TigerWorldContainer.css';
+import '../assets/tigerPatterns.css';
 
 /**
  * Main Container for TigerWorld: Conservation, Habitat, and Ecosystem Significance
@@ -22,10 +23,11 @@ function TigerWorldContainer() {
       {/* Introduction Section */}
       <section className="tiger-section">
         <h2>Introduction to Tigers</h2>
+        <div className="tiger-stripe-divider"></div>
         <div className="tiger-content">
           <div className="tiger-text-content">
             <p>
-              Tigers (Panthera tigris) are one of the most iconic and recognizable big cats in the world. 
+              Tigers (<em>Panthera tigris</em>) are one of the most iconic and recognizable big cats in the world. 
               Known for their distinctive orange coat with black stripes, powerful build, and solitary nature, 
               tigers have captivated human imagination for centuries.
             </p>
@@ -36,7 +38,7 @@ function TigerWorldContainer() {
             </p>
           </div>
           <div className="tiger-image-placeholder">
-            <div className="placeholder-text">Tiger Image Placeholder</div>
+            <div className="placeholder-text">Tiger Image</div>
           </div>
         </div>
       </section>
@@ -44,11 +46,12 @@ function TigerWorldContainer() {
       {/* Conservation Section */}
       <section className="tiger-section">
         <h2>Tiger Conservation Efforts</h2>
+        <div className="tiger-stripe-divider"></div>
         <div className="tiger-content">
           <div className="tiger-text-content">
             <h3>Current Conservation Status</h3>
             <p>
-              Tigers are classified as endangered on the IUCN Red List, with fewer than 4,500 individuals 
+              Tigers are classified as <strong>endangered</strong> on the IUCN Red List, with fewer than 4,500 individuals 
               estimated to remain in the wild. Of the nine subspecies of tiger that existed in the early 1900s, 
               only six remain today, with three having gone extinct in the last century.
             </p>
@@ -74,7 +77,7 @@ function TigerWorldContainer() {
             </ul>
           </div>
           <div className="tiger-image-placeholder">
-            <div className="placeholder-text">Conservation Image Placeholder</div>
+            <div className="placeholder-text">Conservation Image</div>
           </div>
         </div>
       </section>
@@ -82,6 +85,7 @@ function TigerWorldContainer() {
       {/* Habitat Section */}
       <section className="tiger-section">
         <h2>Tiger Habitats Around the World</h2>
+        <div className="tiger-stripe-divider"></div>
         <div className="tiger-content">
           <div className="tiger-text-content">
             <p>
@@ -126,6 +130,7 @@ function TigerWorldContainer() {
       {/* Ecosystem Significance Section */}
       <section className="tiger-section">
         <h2>Ecological Significance</h2>
+        <div className="tiger-stripe-divider"></div>
         <div className="tiger-content">
           <div className="tiger-text-content">
             <h3>Tigers as Ecosystem Engineers</h3>
@@ -155,7 +160,7 @@ function TigerWorldContainer() {
             </p>
           </div>
           <div className="tiger-image-placeholder">
-            <div className="placeholder-text">Ecosystem Image Placeholder</div>
+            <div className="placeholder-text">Ecosystem Image</div>
           </div>
         </div>
       </section>
@@ -163,6 +168,7 @@ function TigerWorldContainer() {
       {/* Threats Section */}
       <section className="tiger-section">
         <h2>Threats to Tiger Populations</h2>
+        <div className="tiger-stripe-divider"></div>
         <div className="tiger-content">
           <div className="tiger-text-content">
             <div className="tiger-threats-container">
@@ -202,6 +208,7 @@ function TigerWorldContainer() {
       {/* Future of Tiger Conservation Section */}
       <section className="tiger-section">
         <h2>The Future of Tiger Conservation</h2>
+        <div className="tiger-stripe-divider"></div>
         <div className="tiger-content">
           <div className="tiger-text-content">
             <p>
@@ -226,7 +233,7 @@ function TigerWorldContainer() {
             </p>
           </div>
           <div className="tiger-image-placeholder">
-            <div className="placeholder-text">Future Conservation Image Placeholder</div>
+            <div className="placeholder-text">Future Conservation Image</div>
           </div>
         </div>
       </section>
@@ -234,14 +241,15 @@ function TigerWorldContainer() {
       {/* Call to Action Section */}
       <section className="tiger-section tiger-cta-section">
         <h2>How You Can Help</h2>
+        <div className="tiger-stripe-divider"></div>
         <div className="tiger-content tiger-cta-content">
           <p>
             Tiger conservation requires global effort and individual action. Here are ways you can contribute 
             to protecting these magnificent creatures:
           </p>
           <div className="tiger-cta-buttons">
-            <button className="tiger-btn">Support Conservation Organizations</button>
-            <button className="tiger-btn">Learn More About Tigers</button>
+            <button className="tiger-btn">Support Conservation</button>
+            <button className="tiger-btn">Learn More</button>
             <button className="tiger-btn">Spread Awareness</button>
           </div>
         </div>
@@ -250,6 +258,7 @@ function TigerWorldContainer() {
       {/* References Section */}
       <section className="tiger-section tiger-references">
         <h2>References & Further Reading</h2>
+        <div className="tiger-stripe-divider"></div>
         <div className="tiger-content">
           <ul className="tiger-reference-list">
             <li>World Wildlife Fund (WWF) - Tiger Conservation</li>
