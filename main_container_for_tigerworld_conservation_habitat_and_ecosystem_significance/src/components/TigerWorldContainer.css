@@ -671,6 +671,40 @@
   border-bottom: none;
 }
 
+/* Table styles for statistics */
+.tiger-stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 30px;
+  background-color: rgba(26, 26, 26, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tiger-stats-table th, 
+.tiger-stats-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tiger-stats-table th {
+  background-color: rgba(255, 107, 0, 0.2);
+  color: var(--tiger-orange-light);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.tiger-stats-table tr:last-child td {
+  border-bottom: none;
+}
+
+.tiger-stats-table tr:hover td {
+  background-color: rgba(255, 107, 0, 0.1);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .tiger-hero {
@@ -698,16 +732,25 @@
     margin-right: 10px;
   }
 
+  .tiger-image,
   .tiger-image-placeholder {
     height: 200px;
   }
 
   .tiger-habitat-grid,
-  .tiger-threats-container {
+  .tiger-threats-container,
+  .tiger-subspecies-grid,
+  .tiger-image-grid,
+  .tiger-gallery {
     grid-template-columns: 1fr;
   }
 
   .tiger-cta-buttons {
     flex-direction: column;
+  }
+
+  .tiger-stats-table {
+    display: block;
+    overflow-x: auto;
   }
 }
