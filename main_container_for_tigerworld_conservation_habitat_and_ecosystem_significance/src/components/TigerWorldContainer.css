@@ -181,55 +181,162 @@
   font-weight: 700;
 }
 
-/* Image Placeholders with Tiger Theme */
-.tiger-image-placeholder {
+/* Tiger Images */
+.tiger-image {
   flex: 1;
   min-width: 250px;
   height: 300px;
-  background-color: rgba(26, 26, 26, 0.5);
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px dashed var(--tiger-orange);
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+  border: 3px solid var(--tiger-orange-dark);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 }
 
-.tiger-image-placeholder::before {
+.tiger-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tiger-image:hover img {
+  transform: scale(1.05);
+}
+
+.tiger-image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(26, 26, 26, 0.8);
+  color: var(--text-secondary);
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 2px solid var(--tiger-orange);
+}
+
+/* Image grid for multiple images */
+.tiger-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+/* Tiger fact cards */
+.tiger-fact-card {
+  background: linear-gradient(145deg, var(--tiger-black-light), rgba(45, 45, 45, 0.8));
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 0;
+  position: relative;
+  border-left: 4px solid var(--tiger-orange-light);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.tiger-fact-card h4 {
+  color: var(--tiger-orange);
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tiger-fact-card h4::before {
+  content: "⭐";
+  font-size: 1.2rem;
+}
+
+.tiger-fact-card::after {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
-  background-image: repeating-linear-gradient(
-    -45deg,
-    transparent 0px,
-    transparent 10px,
-    rgba(255, 107, 0, 0.1) 10px,
-    rgba(255, 107, 0, 0.1) 20px
-  );
+  width: 100px;
+  height: 100px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 20 20'%3E%3Cg fill='%23FF6B00' fill-opacity='0.05'%3E%3Ccircle cx='10' cy='15' r='2'/%3E%3Ccircle cx='7' cy='12' r='1.5'/%3E%3Ccircle cx='13' cy='12' r='1.5'/%3E%3Ccircle cx='8' cy='9' r='1.5'/%3E%3Ccircle cx='12' cy='9' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.3;
+  pointer-events: none;
 }
 
-.tiger-image-placeholder:hover {
+/* Subspecies cards */
+.tiger-subspecies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.tiger-subspecies-card {
+  background-color: rgba(26, 26, 26, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.tiger-subspecies-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+  border-color: var(--tiger-orange);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-.placeholder-text {
-  color: var(--tiger-orange-light);
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 600;
+.tiger-subspecies-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+.tiger-subspecies-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tiger-subspecies-card:hover .tiger-subspecies-image img {
+  transform: scale(1.05);
+}
+
+.tiger-subspecies-content {
+  padding: 20px;
+}
+
+.tiger-subspecies-card h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tiger-subspecies-card .status {
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  position: relative;
-  z-index: 1;
-  background: var(--tiger-black);
-  padding: 10px 15px;
+  padding: 4px 8px;
   border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.status-extinct {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.status-endangered {
+  background-color: #f57c00;
+  color: white;
+}
+
+.status-critical {
+  background-color: #c62828;
+  color: white;
 }
 
 /* Lists */
