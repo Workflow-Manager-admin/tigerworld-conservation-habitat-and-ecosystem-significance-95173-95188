@@ -546,35 +546,61 @@ function TigerWorldContainer() {
         <div className="tiger-stripe-divider"></div>
         <div className="tiger-content">
           <div className="tiger-text-content">
-            <h3>Tigers as Ecosystem Engineers</h3>
+            <h3>Tigers as Apex Predators</h3>
             <p>
-              As apex predators, tigers help regulate prey populations, which in turn influences vegetation 
-              patterns and overall ecosystem health. Their presence indicates a healthy, functioning ecosystem 
-              with intact food webs.
+              As apex predators, tigers sit at the top of the food chain, playing a critical role in regulating prey populations and maintaining ecological balance. Their presence or absence has cascading effects throughout the ecosystem, influencing everything from prey behavior to vegetation patterns.
+            </p>
+            <p>
+              When tigers are removed from an ecosystem, prey populations—particularly herbivores like deer and wild boar—can increase dramatically, leading to overgrazing and habitat degradation. This phenomenon, known as a "trophic cascade," demonstrates the far-reaching impact of apex predators on ecosystems.
             </p>
             
             <h3>The Umbrella Effect</h3>
             <p>
-              Protecting tigers and their habitats indirectly protects countless other species that share 
-              the same ecosystems. A single tiger reserve may be home to thousands of plant and animal species.
+              Tigers are considered an "umbrella species"—protecting them requires conserving vast swaths of habitat that benefit countless other species. A single tiger reserve may be home to thousands of plant species, hundreds of bird species, and dozens of other mammals, reptiles, and amphibians.
             </p>
+            <p>
+              For example, India's tiger reserves protect not only tigers but also other endangered species such as Asian elephants, one-horned rhinoceros, gaur, and various deer species. By conserving tigers, we inadvertently protect entire ecosystems.
+            </p>
+            
+            <h3>Ecosystem Services</h3>
+            <p>
+              Tiger habitats provide essential ecosystem services that benefit human populations. These include:
+            </p>
+            <ul className="tiger-list">
+              <li>
+                <strong>Watershed Protection:</strong> Forested tiger habitats help regulate water flow, prevent soil erosion, and ensure clean water supplies for countless communities.
+              </li>
+              <li>
+                <strong>Carbon Sequestration:</strong> The forests that tigers inhabit store vast amounts of carbon, helping mitigate climate change.
+              </li>
+              <li>
+                <strong>Flood and Disaster Mitigation:</strong> Intact tiger habitats, particularly mangrove forests like the Sundarbans, provide natural barriers against storms, flooding, and coastal erosion.
+              </li>
+              <li>
+                <strong>Pollination and Seed Dispersal:</strong> Diverse tiger habitats support pollinator species and complex seed dispersal networks essential for forest regeneration.
+              </li>
+            </ul>
             
             <h3>Economic Value</h3>
             <p>
-              Tiger conservation can drive economic benefits through ecotourism, providing sustainable 
-              livelihoods for local communities while preserving natural resources.
+              Tiger conservation can drive significant economic benefits through ecotourism, providing sustainable 
+              livelihoods for local communities while preserving natural resources. In India alone, tiger tourism generates hundreds of millions of dollars annually and supports thousands of jobs.
             </p>
-
-            <h3>Cultural Significance</h3>
             <p>
-              Tigers hold immense cultural value across Asia, appearing prominently in art, literature, 
-              mythology, and national identities. This cultural connection can be leveraged to promote 
-              conservation efforts.
+              Beyond tourism, studies have estimated the economic value of ecosystem services provided by tiger habitats to be worth billions of dollars annually. This includes the value of carbon storage, water purification, flood control, and non-timber forest products.
             </p>
           </div>
-          <div className="tiger-image-placeholder">
-            <div className="placeholder-text">Ecosystem Image</div>
+          <div className="tiger-image">
+            <img src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tiger in natural ecosystem" />
+            <div className="tiger-image-caption">Tiger in its natural ecosystem - maintaining balance as an apex predator</div>
           </div>
+        </div>
+        
+        <div className="tiger-fact-card">
+          <h4>Indicator Species</h4>
+          <p>
+            Tigers are considered an indicator species, meaning their presence suggests a healthy, functioning ecosystem. To support a viable tiger population, an area must have sufficient prey, which in turn requires intact vegetation. The absence of tigers often signals broader ecological problems. This is why tiger monitoring programs are so valuable - they provide insights into overall ecosystem health.
+          </p>
         </div>
       </section>
 
