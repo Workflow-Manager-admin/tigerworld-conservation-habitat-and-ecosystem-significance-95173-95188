@@ -11,11 +11,16 @@ function TigerWorldContainer() {
   return (
     <div className="tiger-world-container">
       {/* Hero Section */}
-      <section className="tiger-hero">
+      <section className="tiger-hero" style={{
+        background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url('https://images.unsplash.com/photo-1549480017-d76466a4b7e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="tiger-hero-content">
           <h1>TigerWorld: Conservation, Habitat, and Ecosystem Significance</h1>
           <p className="tiger-subtitle">
-            Exploring the majestic world of tigers and their crucial role in maintaining balanced ecosystems
+            Discovering the magnificent world of tigers - their history, behavior, habitats, and the urgent need for conservation
           </p>
         </div>
       </section>
