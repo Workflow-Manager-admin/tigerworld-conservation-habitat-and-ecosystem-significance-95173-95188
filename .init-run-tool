@@ -1,0 +1,4 @@
+{
+    "command": "PORT=<port> BROWSER=none npm start",
+    "working_directory": "/home/kavia/workspace/code-generation/tigerworld-conservation-habitat-and-ecosystem-significance-95173-95188/main_container_for_tigerworld_conservation_habitat_and_ecosystem_significance"
+}
