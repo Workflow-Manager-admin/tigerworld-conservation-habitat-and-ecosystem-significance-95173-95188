@@ -4,8 +4,8 @@ import '../assets/tigerPatterns.css';
 
 /**
  * Main Container for TigerWorld: Conservation, Habitat, and Ecosystem Significance
- * A comprehensive blog post exploring the world of tigers, their habitat, conservation, 
- * and significance in the ecosystem.
+ * A comprehensive resource exploring the world of tigers, their subspecies, habitat, 
+ * conservation, behavior, cultural significance, and ecosystem impact.
  */
 function TigerWorldContainer() {
   return (
