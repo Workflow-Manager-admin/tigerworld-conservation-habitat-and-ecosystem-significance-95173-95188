@@ -1,18 +1,33 @@
 :root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  /* Tiger theme colors */
+  --tiger-orange: #FF6B00;
+  --tiger-orange-dark: #E04E00;
+  --tiger-orange-light: #FF8F3F;
+  --tiger-orange-glow: #FFAC62;
+  --tiger-black: #1A1A1A;
+  --tiger-black-light: #2D2D2D;
+  --tiger-cream: #FFF3E0;
+  --tiger-green: #4A6C2F;
+  --tiger-green-dark: #344F1F;
+  
+  /* Text colors */
+  --text-color: var(--tiger-cream);
+  --text-secondary: rgba(255, 243, 224, 0.8);
+  --text-highlight: var(--tiger-orange-light);
+  
+  /* Border colors */
+  --border-color: rgba(255, 107, 0, 0.3);
+  --border-highlight: rgba(255, 107, 0, 0.6);
 }
 
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  background-color: var(--kavia-dark);
+  background-color: var(--tiger-black);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%23FF6B00' fill-opacity='0.05' d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5z'/%3E%3C/svg%3E");
 }
 
 .app {
@@ -22,29 +37,33 @@ body {
 }
 
 .navbar {
-  background-color: var(--kavia-dark);
+  background-color: var(--tiger-black-light);
   padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 3px solid var(--tiger-orange);
   position: fixed;
   top: 0;
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .logo-symbol {
-  color: var(--kavia-orange);
+  color: var(--tiger-orange);
+  font-size: 1.5rem;
 }
 
 .container {
@@ -63,19 +82,44 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--tiger-orange-dark) 0px,
+    var(--tiger-orange-dark) 10px,
+    var(--tiger-black) 10px,
+    var(--tiger-black) 20px
+  );
 }
 
 .subtitle {
-  color: var(--kavia-orange);
-  font-weight: 500;
+  color: var(--tiger-orange);
+  font-weight: 600;
   font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .title {
   font-size: 3.5rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
   margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(transparent, transparent, var(--tiger-orange-light));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: var(--text-color);
 }
 
 .description {
@@ -87,19 +131,24 @@ body {
 }
 
 .btn {
-  background-color: var(--kavia-orange);
+  background-color: var(--tiger-orange);
   color: white;
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 107, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .btn:hover {
-  background-color: #FF8B4D;
+  background-color: var(--tiger-orange-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.6);
 }
 
 .btn-large {
