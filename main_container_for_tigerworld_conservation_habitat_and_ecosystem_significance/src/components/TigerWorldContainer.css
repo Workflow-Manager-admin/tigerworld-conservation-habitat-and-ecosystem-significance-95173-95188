@@ -1,4 +1,4 @@
-/* TigerWorld Container Styles */
+/* TigerWorld Container Styles with Tiger Theme */
 
 .tiger-world-container {
   width: 100%;
@@ -10,7 +10,8 @@
 
 /* Hero Section */
 .tiger-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1200x600?text=Tiger+Habitat');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('https://images.unsplash.com/photo-1477764250597-dffe9f601ae8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -21,19 +22,56 @@
   margin-bottom: 60px;
   border-radius: 8px;
   overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 4px solid var(--tiger-orange-dark);
+}
+
+/* Tiger stripe overlay on hero */
+.tiger-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0px,
+    transparent 10px,
+    rgba(255, 107, 0, 0.1) 10px,
+    rgba(255, 107, 0, 0.1) 20px
+  );
+  pointer-events: none;
 }
 
 .tiger-hero-content {
   padding: 0 20px;
   max-width: 800px;
+  position: relative;
+  z-index: 2;
 }
 
 .tiger-hero h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 20px;
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.tiger-hero h1::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 30%;
+  right: 30%;
+  height: 4px;
+  background-color: var(--tiger-orange);
+  border-radius: 2px;
 }
 
 .tiger-subtitle {
@@ -41,39 +79,88 @@
   line-height: 1.6;
   color: var(--text-secondary);
   margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Divider */
+.tiger-stripe-divider {
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--tiger-orange-dark) 0px,
+    var(--tiger-orange-dark) 10px,
+    var(--tiger-black) 10px,
+    var(--tiger-black) 20px
+  );
+  margin: 2rem 0;
+  border-radius: 3px;
 }
 
 /* Content Sections */
 .tiger-section {
   margin-bottom: 60px;
-  padding: 0 20px;
+  padding: 30px;
+  background-color: var(--tiger-black-light);
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-left: 4px solid var(--tiger-orange);
+}
+
+/* Tiger paw pattern background */
+.tiger-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 20 20'%3E%3Cg fill='%23FF6B00' fill-opacity='0.05'%3E%3Ccircle cx='10' cy='15' r='2'/%3E%3Ccircle cx='7' cy='12' r='1.5'/%3E%3Ccircle cx='13' cy='12' r='1.5'/%3E%3Ccircle cx='8' cy='9' r='1.5'/%3E%3Ccircle cx='12' cy='9' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 .tiger-section h2 {
   font-size: 2.2rem;
-  color: var(--kavia-orange);
+  color: var(--tiger-orange);
   margin-bottom: 30px;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Add paw print before section headers */
+.tiger-section h2::before {
+  content: "🐾";
+  margin-right: 15px;
+  font-size: 1.8rem;
 }
 
 .tiger-section h3 {
   font-size: 1.5rem;
   margin-top: 30px;
   margin-bottom: 15px;
+  color: var(--tiger-orange-light);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .tiger-section h4 {
   font-size: 1.25rem;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: var(--kavia-orange);
+  color: var(--tiger-orange);
+  letter-spacing: 0.5px;
 }
 
 .tiger-content {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .tiger-text-content {
@@ -88,36 +175,87 @@
   color: var(--text-secondary);
 }
 
-/* Image Placeholders */
+/* Highlight important text */
+.tiger-text-content strong {
+  color: var(--tiger-orange-light);
+  font-weight: 700;
+}
+
+/* Image Placeholders with Tiger Theme */
 .tiger-image-placeholder {
   flex: 1;
   min-width: 250px;
   height: 300px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(26, 26, 26, 0.5);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dashed var(--border-color);
+  border: 2px dashed var(--tiger-orange);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.tiger-image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0px,
+    transparent 10px,
+    rgba(255, 107, 0, 0.1) 10px,
+    rgba(255, 107, 0, 0.1) 20px
+  );
+}
+
+.tiger-image-placeholder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
 }
 
 .placeholder-text {
-  color: var(--text-secondary);
+  color: var(--tiger-orange-light);
   font-size: 1rem;
   text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  background: var(--tiger-black);
+  padding: 10px 15px;
+  border-radius: 4px;
 }
 
 /* Lists */
 .tiger-list {
   padding-left: 20px;
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 .tiger-list li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--text-secondary);
+  position: relative;
+  padding-left: 28px;
+}
+
+/* Custom tiger paw list style */
+.tiger-list li::before {
+  content: "🐾";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--tiger-orange);
+  font-size: 1rem;
 }
 
 /* Habitat Cards */
@@ -129,14 +267,42 @@
 }
 
 .tiger-habitat-card {
-  background-color: rgba(232, 122, 65, 0.1);
+  background-color: rgba(26, 26, 26, 0.7);
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid rgba(232, 122, 65, 0.3);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tiger stripe accent on habitat cards */
+.tiger-habitat-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--tiger-orange) 0px,
+    var(--tiger-orange) 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  opacity: 0.2;
+}
+
+.tiger-habitat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: var(--tiger-orange);
 }
 
 .tiger-habitat-card h4 {
   margin-top: 0;
+  color: var(--tiger-orange);
 }
 
 .tiger-habitat-card p {
@@ -151,14 +317,31 @@
 }
 
 .tiger-threat-item {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(26, 26, 26, 0.7);
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--tiger-orange-dark);
+  transition: all 0.3s ease;
+}
+
+.tiger-threat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-left-color: var(--tiger-orange);
 }
 
 .tiger-threat-item h4 {
   margin-top: 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+/* Warning icon for threats */
+.tiger-threat-item h4::before {
+  content: "⚠️";
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .tiger-threat-item p {
@@ -167,16 +350,39 @@
 
 /* Call to Action Section */
 .tiger-cta-section {
-  background-color: rgba(232, 122, 65, 0.1);
+  background: linear-gradient(135deg, var(--tiger-black-light), rgba(74, 108, 47, 0.3));
   padding: 40px;
   border-radius: 8px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+/* Tiger stripe overlay on CTA */
+.tiger-cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0px,
+    transparent 10px,
+    rgba(255, 107, 0, 0.1) 10px,
+    rgba(255, 107, 0, 0.1) 20px
+  );
+  pointer-events: none;
 }
 
 .tiger-cta-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .tiger-cta-buttons {
@@ -188,37 +394,81 @@
 }
 
 .tiger-btn {
-  background-color: var(--kavia-orange);
+  background-color: var(--tiger-orange);
   color: white;
   border: none;
   border-radius: 4px;
   padding: 12px 24px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
+/* Button hover effect with tiger eye glow */
 .tiger-btn:hover {
-  background-color: #FF8B4D;
+  background-color: var(--tiger-orange-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 107, 0, 0.4), 0 0 10px rgba(255, 107, 0, 0.2);
 }
 
 /* References Section */
 .tiger-references {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(26, 26, 26, 0.7);
   padding: 30px;
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle tiger pattern in references */
+.tiger-references::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0px,
+    transparent 20px,
+    rgba(255, 107, 0, 0.05) 20px,
+    rgba(255, 107, 0, 0.05) 40px
+  );
+  pointer-events: none;
 }
 
 .tiger-reference-list {
   list-style-type: none;
   padding-left: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .tiger-reference-list li {
-  padding: 10px 0;
+  padding: 15px;
+  margin-bottom: 10px;
   border-bottom: 1px solid var(--border-color);
   color: var(--text-secondary);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tiger-reference-list li::before {
+  content: "📚";
+  margin-right: 10px;
+}
+
+.tiger-reference-list li:hover {
+  background-color: rgba(255, 107, 0, 0.1);
+  border-radius: 4px;
+  padding-left: 20px;
 }
 
 .tiger-reference-list li:last-child {
@@ -227,6 +477,10 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  .tiger-hero {
+    height: 400px;
+  }
+
   .tiger-hero h1 {
     font-size: 2.2rem;
   }
@@ -235,8 +489,17 @@
     font-size: 1.1rem;
   }
 
+  .tiger-section {
+    padding: 20px;
+  }
+
   .tiger-section h2 {
     font-size: 1.8rem;
+  }
+
+  .tiger-section h2::before {
+    font-size: 1.5rem;
+    margin-right: 10px;
   }
 
   .tiger-image-placeholder {
