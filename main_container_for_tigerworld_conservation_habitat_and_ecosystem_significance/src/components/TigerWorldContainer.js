@@ -358,30 +358,87 @@ function TigerWorldContainer() {
               estimated to remain in the wild. Of the nine subspecies of tiger that existed in the early 1900s, 
               only six remain today, with three having gone extinct in the last century.
             </p>
+            <p>
+              At the beginning of the 20th century, the global tiger population was estimated at 100,000. By 2010, that number had plummeted to just 3,200, marking a devastating 97% decline in a century. Thanks to concerted conservation efforts, the population has since increased to approximately 4,500 as of the latest global assessments.
+            </p>
             
             <h3>Major Conservation Initiatives</h3>
             <ul className="tiger-list">
               <li>
-                <strong>Global Tiger Recovery Program:</strong> An international initiative launched in 2010 
-                with the goal of doubling wild tiger populations by 2022.
+                <strong>Global Tiger Recovery Program:</strong> An international initiative launched in 2010 at the St. Petersburg Tiger Summit with the ambitious goal of doubling wild tiger populations by 2022 (TX2). This program brought together all 13 tiger range countries in an unprecedented collaborative effort.
               </li>
               <li>
-                <strong>Protected Area Management:</strong> Establishing and strengthening protected areas in 
-                tiger range countries to secure critical habitat.
+                <strong>Protected Area Management:</strong> Establishing and strengthening protected areas in tiger range countries to secure critical habitat. Currently, there are approximately 110 designated tiger reserves across Asia.
               </li>
               <li>
-                <strong>Anti-Poaching Efforts:</strong> Increasing law enforcement and anti-poaching measures 
-                to combat illegal wildlife trade.
+                <strong>Anti-Poaching Efforts:</strong> Increasing law enforcement and anti-poaching measures to combat illegal wildlife trade, including the use of advanced technologies like camera traps, drones, and DNA analysis.
               </li>
               <li>
-                <strong>Human-Tiger Conflict Mitigation:</strong> Implementing strategies to reduce conflict 
-                between tigers and local communities.
+                <strong>Human-Tiger Conflict Mitigation:</strong> Implementing strategies to reduce conflict between tigers and local communities, such as compensation schemes for livestock loss, tiger-proof livestock enclosures, and community-based monitoring programs.
+              </li>
+              <li>
+                <strong>Corridor Conservation:</strong> Creating and protecting wildlife corridors that connect isolated tiger populations, allowing for genetic exchange and range expansion.
+              </li>
+              <li>
+                <strong>CITES Protection:</strong> Tigers are listed on Appendix I of CITES (Convention on International Trade in Endangered Species of Wild Fauna and Flora), which prohibits international commercial trade in tigers and their parts.
+              </li>
+            </ul>
+            
+            <h3>Major Organizations Dedicated to Tiger Protection</h3>
+            <p>Several international and local organizations work tirelessly on tiger conservation:</p>
+            <ul className="tiger-list">
+              <li>
+                <strong>WWF (World Wildlife Fund):</strong> A leading organization in tiger conservation through their Tigers Alive Initiative, working in all 13 tiger range countries.
+              </li>
+              <li>
+                <strong>Panthera:</strong> Their Tigers Forever program aims to increase tiger numbers by at least 50% in key sites over a 10-year period.
+              </li>
+              <li>
+                <strong>Wildlife Conservation Society (WCS):</strong> Works on scientific research, anti-poaching efforts, and community engagement across tiger habitats.
+              </li>
+              <li>
+                <strong>Global Tiger Forum (GTF):</strong> The only intergovernmental organization dedicated exclusively to tiger conservation.
+              </li>
+              <li>
+                <strong>National Tiger Conservation Authority (India):</strong> A statutory body that oversees the Project Tiger initiative in India, home to 70% of the world's wild tigers.
               </li>
             </ul>
           </div>
-          <div className="tiger-image-placeholder">
-            <div className="placeholder-text">Conservation Image</div>
+          <div className="tiger-image">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tiger Conservation Rangers" />
+            <div className="tiger-image-caption">Anti-poaching rangers patrolling a tiger reserve</div>
           </div>
+        </div>
+        
+        <h3>Conservation Timeline</h3>
+        <div className="tiger-timeline">
+          <div className="tiger-timeline-item">
+            <span className="tiger-timeline-date">1973</span>
+            <p>India launches Project Tiger, one of the world's most successful conservation initiatives, establishing 9 tiger reserves.</p>
+          </div>
+          <div className="tiger-timeline-item">
+            <span className="tiger-timeline-date">1993</span>
+            <p>China bans domestic trade in tiger bone for use in traditional Chinese medicine.</p>
+          </div>
+          <div className="tiger-timeline-item">
+            <span className="tiger-timeline-date">2010</span>
+            <p>The St. Petersburg Tiger Summit brings together tiger range countries to commit to doubling wild tiger populations by 2022 (TX2).</p>
+          </div>
+          <div className="tiger-timeline-item">
+            <span className="tiger-timeline-date">2016</span>
+            <p>WWF announces that global wild tiger numbers increase for the first time in a century, from 3,200 to 3,890.</p>
+          </div>
+          <div className="tiger-timeline-item">
+            <span className="tiger-timeline-date">2022</span>
+            <p>The International Tiger Day celebration marks progress towards the TX2 goal, with several countries including India, Nepal, and Russia reporting significant increases in their tiger populations.</p>
+          </div>
+        </div>
+        
+        <div className="tiger-fact-card">
+          <h4>Conservation Success Stories</h4>
+          <p>
+            Nepal became the first country to almost double its tiger population ahead of the 2022 target, growing from 121 tigers in 2009 to 235 in 2018. In India, the tiger population increased from 1,411 in 2006 to 2,967 in 2018, marking a substantial recovery. These successes demonstrate that with political will, community involvement, and proper resource allocation, tiger populations can recover.
+          </p>
         </div>
       </section>
 
