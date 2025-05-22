@@ -1,0 +1,254 @@
+/* TigerWorld Container Styles */
+
+.tiger-world-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-color);
+  padding-bottom: 60px;
+}
+
+/* Hero Section */
+.tiger-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1200x600?text=Tiger+Habitat');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tiger-hero-content {
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.tiger-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tiger-subtitle {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+/* Content Sections */
+.tiger-section {
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.tiger-section h2 {
+  font-size: 2.2rem;
+  color: var(--kavia-orange);
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 15px;
+}
+
+.tiger-section h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.tiger-section h4 {
+  font-size: 1.25rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--kavia-orange);
+}
+
+.tiger-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.tiger-text-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.tiger-text-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+/* Image Placeholders */
+.tiger-image-placeholder {
+  flex: 1;
+  min-width: 250px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--border-color);
+}
+
+.placeholder-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Lists */
+.tiger-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.tiger-list li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Habitat Cards */
+.tiger-habitat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.tiger-habitat-card {
+  background-color: rgba(232, 122, 65, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(232, 122, 65, 0.3);
+}
+
+.tiger-habitat-card h4 {
+  margin-top: 0;
+}
+
+.tiger-habitat-card p {
+  margin-bottom: 0;
+}
+
+/* Threats Section */
+.tiger-threats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tiger-threat-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.tiger-threat-item h4 {
+  margin-top: 0;
+}
+
+.tiger-threat-item p {
+  margin-bottom: 0;
+}
+
+/* Call to Action Section */
+.tiger-cta-section {
+  background-color: rgba(232, 122, 65, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.tiger-cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tiger-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tiger-btn {
+  background-color: var(--kavia-orange);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.tiger-btn:hover {
+  background-color: #FF8B4D;
+}
+
+/* References Section */
+.tiger-references {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.tiger-reference-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tiger-reference-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.tiger-reference-list li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tiger-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .tiger-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .tiger-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .tiger-image-placeholder {
+    height: 200px;
+  }
+
+  .tiger-habitat-grid,
+  .tiger-threats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tiger-cta-buttons {
+    flex-direction: column;
+  }
+}
