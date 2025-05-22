@@ -454,37 +454,90 @@ function TigerWorldContainer() {
               reduced by about 93%, confining them to fragmented pockets of habitat.
             </p>
             
+            <p>
+              Tigers are incredibly adaptable and can inhabit a wide range of environments, from the snowy taiga of Siberia to the tropical rainforests of Indonesia. The key requirements for tiger habitat are adequate cover, access to water, and sufficient prey.
+            </p>
+            
             <h3>Key Tiger Habitats</h3>
             <div className="tiger-habitat-grid">
               <div className="tiger-habitat-card">
                 <h4>Tropical Forests</h4>
                 <p>
                   Dense forests in India, Southeast Asia, and Indonesia provide critical cover for hunting 
-                  and raising cubs.
+                  and raising cubs. These include moist and dry deciduous forests, tropical and subtropical moist broadleaf forests, and evergreen forests.
                 </p>
               </div>
               <div className="tiger-habitat-card">
                 <h4>Mangrove Swamps</h4>
                 <p>
                   The Sundarbans in India and Bangladesh form the world's largest mangrove forest and support 
-                  a unique population of tigers adapted to semi-aquatic life.
+                  a unique population of tigers adapted to semi-aquatic life. These tigers are excellent swimmers who can cross rivers up to 8km wide and have adapted to drinking saline water.
                 </p>
               </div>
               <div className="tiger-habitat-card">
                 <h4>Taiga Ecosystems</h4>
                 <p>
-                  Siberian tigers survive in the harsh, snowy forests of the Russian Far East and Northeast China.
+                  Siberian tigers survive in the harsh, snowy forests of the Russian Far East and Northeast China, where winter temperatures can drop to -40°C. They have thicker fur, more fat deposits, and larger territories than their tropical cousins due to lower prey density.
                 </p>
               </div>
               <div className="tiger-habitat-card">
                 <h4>Grasslands and Savannas</h4>
                 <p>
-                  Open grasslands interspersed with forests provide ideal hunting grounds in parts of India and Nepal.
+                  Open grasslands interspersed with forests provide ideal hunting grounds in parts of India and Nepal. Tall grass habitats like those found in Terai regions offer excellent camouflage for tigers while stalking prey.
+                </p>
+              </div>
+              <div className="tiger-habitat-card">
+                <h4>Mountainous Regions</h4>
+                <p>
+                  Tigers can also inhabit mountainous areas, with some populations found at elevations up to 3,000 meters (9,800 ft) in the Himalayas. These mountain tigers often follow their prey species up and down the slopes with seasonal migrations.
+                </p>
+              </div>
+              <div className="tiger-habitat-card">
+                <h4>Riparian Corridors</h4>
+                <p>
+                  Areas along rivers and streams are particularly important for tigers, providing water, prey concentration, and travel corridors between fragmented habitats. Many protected areas follow these natural corridors.
                 </p>
               </div>
             </div>
           </div>
         </div>
+        
+        <div className="tiger-gallery">
+          <div className="gallery-item">
+            <img src="https://images.unsplash.com/photo-1477764250597-dffe9f601ae8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tiger in grassland" />
+          </div>
+          <div className="gallery-item">
+            <img src="https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tiger in water" />
+          </div>
+          <div className="gallery-item">
+            <img src="https://images.pexels.com/photos/44527/tiger-siberian-tiger-amurtiger-big-cat-44527.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Siberian tiger in snow" />
+          </div>
+          <div className="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Tiger_in_Ranthambhore.jpg" alt="Bengal tiger in deciduous forest" />
+          </div>
+        </div>
+        
+        <h3>Protected Tiger Habitats</h3>
+        <p>
+          Protected areas form the cornerstone of tiger conservation. Some of the most important tiger reserves and national parks include:
+        </p>
+        <ul className="tiger-list">
+          <li>
+            <strong>Jim Corbett National Park, India:</strong> India's oldest national park and home to one of the highest tiger densities in the country.
+          </li>
+          <li>
+            <strong>Sundarbans National Park, India/Bangladesh:</strong> The largest mangrove forest in the world and UNESCO World Heritage site.
+          </li>
+          <li>
+            <strong>Sikhote-Alin Biosphere Reserve, Russia:</strong> Critical protected area for Siberian tigers.
+          </li>
+          <li>
+            <strong>Chitwan National Park, Nepal:</strong> A conservation success story where tiger numbers have doubled in recent years.
+          </li>
+          <li>
+            <strong>Way Kambas National Park, Indonesia:</strong> Important protected area for the critically endangered Sumatran tiger.
+          </li>
+        </ul>
       </section>
 
       {/* Ecosystem Significance Section */}
